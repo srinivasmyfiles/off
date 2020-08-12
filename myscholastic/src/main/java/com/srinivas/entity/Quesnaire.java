@@ -22,10 +22,15 @@ public class Quesnaire  implements Serializable {
   private String quename;
 	@Column(name ="QUT_DESCRIPCTION")
   private String quediscr;
+	@Column(name ="CREATEDBY")
+  private String createdby;
+	@Column(name ="UPDATEBY")
+  private String updateby;
+	@Column(name ="DELETEBY")
+  private String deleteby;
+	@Column(name =" ACTIVE")
+  private String active;
 	
-	
-	
-
 	public String getQuename() {
 		return quename;
 	}
@@ -38,14 +43,35 @@ public class Quesnaire  implements Serializable {
 	public void setQuediscr(String quediscr) {
 		this.quediscr = quediscr;
 	}
-	@Override
-	public String toString() {
-		return "Quesnaire [id=" + id + ", quename=" + quename + ", quediscr=" + quediscr + "]";
-	}
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public String getCreatedby() {
+		return createdby;
+	}
+	public void setCreatedby(String createdby) {
+		this.createdby = createdby;
+	}
+	public String getUpdateby() {
+		return updateby;
+	}
+	public void setUpdateby(String updateby) {
+		this.updateby = updateby;
+	}
+	public String getDeleteby() {
+		return deleteby;
+	}
+	public void setDeleteby(String deleteby) {
+		this.deleteby = deleteby;
+	}
+	public String getActive() {
+		return active;
+	}
+	public void setActive(String active) {
+		this.active = active;
 	}
 }
